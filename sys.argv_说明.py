@@ -10,7 +10,7 @@ print(a)
 
 import sys
 
-if len(sys.argv)<2:
+if len(sys.argv)<2:                  #如果sys.argv 的长度小于2，证明是用户忘记了输入该有的参数
     print("使用方法：python 8-4.py 成绩文件")
     exit(1)
 
