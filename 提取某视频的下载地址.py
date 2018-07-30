@@ -8,11 +8,11 @@ url = sys.argv[1]
 '''
 from bs4 import BeautifulSoup
 import requests
-url = 'https://www.77kp.com/vod-detail-id-88283.html'
+url = 'https://www.77kp.com/vod-detail-id-88283.html'   #要提取地址的网页
 
 html = requests.get(url).text
 sp = BeautifulSoup(html,'html.parser')
-all_links = sp.find_all('a')
+all_links = sp.find_all('a')                        #html中链接的标签是'a'
 
 for link in all_links:
     href = link.get('href')
