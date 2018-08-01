@@ -11,6 +11,7 @@ for word in words:
     else:
         word_counts[word.upper()] = 1 #第一次遇到该单词时执行
 
+fp.close()
 key_list = list(word_counts.keys()) #list(word_counts.keys())取出word_counts中的键组成列表
 key_list.sort()           #对list的内容进行从小到大的排序
 for key in key_list:
