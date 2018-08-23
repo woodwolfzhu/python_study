@@ -12,7 +12,7 @@ class Me(Person):
     def study(self):
         print("I can study something qucikly!")
 
-zhuzhiwei = Person()
+zhuzhiwei = Me()
 zhuzhiwei.run()
 zhuzhiwei.eat()
 zhuzhiwei.study()
