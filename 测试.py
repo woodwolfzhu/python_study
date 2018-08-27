@@ -1,22 +1,19 @@
-class Person:
+class classmethod:
 
-    def run(self):
-        print("I can run fast!")
+    num = 0
 
-    def eat(self):
-         print("I eat very much every day,but I will not be fat!")
+    def __init__(self):
+        classmethod.num += 1
 
+    @classmethod
+    def showtime(cls):
+        cls.num += 1
+        print(cls.num)
 
-class Me(Person):
-
-    def __study(self):
-        print("I can study something qucikly!")
-
-    def run(self):
-        print("I want to zhui houhuimin!")
-        super().run()
-
-zhuzhiwei = Me()
-zhuzhiwei.run()
-zhuzhiwei.eat()
-zhuzhiwei._Me__study()
+a = classmethod()
+b = classmethod()
+c = classmethod()
+print(a)
+classmethod.showtime()
+classmethod.showtime()
+classmethod.showtime()
